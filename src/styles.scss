@@ -137,7 +137,6 @@ select {
   color: #2E8CAD;
 }
 
-
 .font-size-72 {
   font-family: 'Mitr', sans-serif;
   font-style: normal;
@@ -178,7 +177,6 @@ select {
 .m-b-14px {
   margin-bottom: 14px;
 }
-
 
 .m-b-30px {
   margin-bottom: 30px;
@@ -240,8 +238,8 @@ select {
   padding-top: 10px;
 }
 
-.p-l-r-30-b-50 {
-  padding: 0 30px 50px 30px;
+.p-t-l-r-30-b-50 {
+  padding: 30px 30px 50px 30px;
 }
 
 .m-t-l-30-r-14 {
@@ -251,7 +249,8 @@ select {
 .header {
   width: 100%;
   max-width: 1900px;
-  height: 1230px;
+  height: auto;
+  min-height: 1263px;
   background-color: white;
   background-image: url(./assets/images/Rectangle\ 236.png);
   background-size: cover;
@@ -278,19 +277,6 @@ select {
   position: relative;
   border: none;
 }
-
-// .container__button button {
-//   width: 160px;
-//   height: 50px;
-//   background: #2EBAEB;
-//   border-radius: 40px;
-//   display: flex;
-//   justify-content: center;
-//   position: relative;
-//   border: none;
-// }
-
-
 
 .header__button button::after {
   content: "";
@@ -351,7 +337,6 @@ select {
 .container__img-text-wrapper {
   width: auto;
   height: auto;
-  // display: flex;
 }
 
 .container__img {
@@ -367,14 +352,15 @@ select {
 .services {
   width: 100%;
   max-width: 1900px;
-  height: 815px;
+  height: auto;
   margin: 0 auto;
   background-color: #F2F2F2;
 }
 
 .services__img-tex-wrapper {
   background-color: #F2F2F2;
-  width: auto;
+  width: 100%;
+  max-width: 385px;
   height: auto;
 }
 
@@ -385,7 +371,7 @@ select {
 .testymonials {
   width: 100%;
   max-width: 1900px;
-  height: 800px;
+  height: auto;
   background-color: #95D4EB;
   margin: 0 auto;
 }
@@ -411,9 +397,76 @@ select {
 }
 
 .testymonials__footer {
-width: 100%;
-max-width: 1900px;
-height: 100px;
-margin: 0 auto;
-background: #47626B;
+  width: 100%;
+  max-width: 1900px;
+  height: 100px;
+  margin: 0 auto;
+  background: #47626B;
+}
+
+
+@media only screen and (max-width: 1199px) {
+  .header__left-wrapper {
+    width: auto;
+    max-width: 480px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__contact-box {
+    padding: 30px 60px;
+    height: auto;
+  }
+
+  .header__button {
+    margin: 50px;
+  }
+
+  .header__left-wrapper {
+    width: auto;
+    max-width: 480px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .services__img-tex-wrapper.media-m-b-30px {
+    margin-bottom: 30px;
+  }
+
+  .testymonials__img-text-wrapper {
+    min-width: 320px;
+    border-radius: 20px;
+  }
+
+  .header__contact-box {
+    margin-bottom: 50px;
+  }
+
+  .header__left-wrapper {
+    width: auto;
+    max-width: 480px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .header__contact-box {
+    padding: 30px 30px;
+    height: auto;
+  }
+
+  .testymonials__img-text-wrapper {
+    border-radius: 0px;
+  }
+
+  .header__left-wrapper {
+    width: auto;
+    max-width: 480px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .testymonials__logo {
+    font-size: 40px;
+  }
 }
